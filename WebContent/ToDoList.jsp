@@ -38,7 +38,7 @@
       <th scope="row">2</th>
       <td>Jacob sssd</td>
       <td>Thornton asdsa</td>
-      <td>@fat</td>
+      <td>@fatter</td>
     </tr>
     <tr>
       <th scope="row">3</th>
