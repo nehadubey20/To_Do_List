@@ -15,6 +15,8 @@
 		<div class="h1">
 		<p class ="justify-content-center text-center">TO DO LIST</p>
 		</div>
+		<p>by simple operations</p>
+		
 	</div>
 </body>
 </html>
