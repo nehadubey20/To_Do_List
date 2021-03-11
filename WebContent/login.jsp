@@ -21,8 +21,8 @@
        <!--      <img src="assets/images/logo.svg" alt="logo" class="logo"> -->
           </div>
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Log in</h1>
-            <form action="#!">
+            <h1 class="login-title">Log In</h1>
+            <form action="#">
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com">
