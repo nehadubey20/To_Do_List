@@ -31,13 +31,13 @@
     <tr>
       <th scope="row">1</th>
       <td>Mark</td>
-      <td>Otto</td>
+      <td>Otto sfdd</td>
       <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
+      <td>Jacob sssd</td>
+      <td>Thornton asdsa</td>
       <td>@fat</td>
     </tr>
     <tr>
