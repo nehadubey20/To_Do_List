@@ -41,6 +41,7 @@ public class SignUp extends HttpServlet {
 		String password = request.getParameter("password");
 		String phone = request.getParameter("phone");
 		
+		
 	}
 
 }
