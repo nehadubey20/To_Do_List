@@ -42,6 +42,7 @@ public class SignUp extends HttpServlet {
 		String phone = request.getParameter("phone");
 		
 		
+		
 	}
 
 }
