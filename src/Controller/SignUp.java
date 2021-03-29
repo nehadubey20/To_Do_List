@@ -68,8 +68,9 @@ public class SignUp extends HttpServlet {
             out.println("alert(\"Registeration Fail!\")");
             out.println("</script>");
 		}
-//		request.getRequestDispatcher("login.jsp").forward(request, response);
-//		
+		
+		//request.getRequestDispatcher("login.jsp").forward(request, response);
+		
 		
 	}
 
