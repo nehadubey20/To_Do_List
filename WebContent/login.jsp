@@ -21,7 +21,7 @@
           </div>
           <div class="login-wrapper my-auto">
             <h1 class="login-title">Log In</h1>
-            <form action="#">
+            <form action="Login" method="post">
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com">

@@ -56,11 +56,20 @@ public class SignUp extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		if(SignUpDAO.insertData(ub)==true)
 		{
-			out.println("Insertion Success!!");
+			out.println("<script type=\"text/JavaScript\">");
+            out.println("alert(\"User Registered Successfully!\")");
+            out.println("</script>");
+			
+			
 		}
 		else
-			out.println("Insertion Fail");
-		
+		{
+			out.println("<script type=\"text/JavaScript\">");
+            out.println("alert(\"Registeration Fail!\")");
+            out.println("</script>");
+		}
+//		request.getRequestDispatcher("login.jsp").forward(request, response);
+//		
 		
 	}
 
