@@ -1,10 +1,14 @@
 package Controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import Bean.UserBean;
 
 /**
  * Servlet implementation class SignUp
@@ -40,6 +44,15 @@ public class SignUp extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String phone = request.getParameter("phone");
+		
+		UserBean ub = new UserBean();
+		ub.setFname(fname);
+		ub.setLname(lname);
+		ub.setUsername(username);
+		ub.setPassword(password);
+		ub.setPhone(phone);
+		
+		ArrayList al = new ArrayList();
 		
 		
 		
