@@ -9,10 +9,9 @@ import jdbcConnector.dbConnector;
 
 public class SignUpDAO {
 	
-	public static boolean insertData()
+	public static boolean insertData(UserBean ub)
 	{
 		Connection con = dbConnector.getConnection();
-		UserBean ub =new UserBean();
 		try {
 			
 			String query = "Insert into todouser(FirstName,LastName,Username,Password,Phone) values (?,?,?,?,?)";
