@@ -28,7 +28,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.sendRedirect("login.jsp");
+		//response.sendRedirect("login.jsp");
 	
 	}
 
@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
 		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
@@ -46,14 +46,20 @@ public class Login extends HttpServlet {
 		lb.setUsername(username);
 		lb.setPassword(password);
 		
-		
+		try {
 		if(LoginDAO.validate(lb))
 		{
 			request.getRequestDispatcher("ToDoList.jsp").forward(request,response);
 		}
+		
 		else
 		{
 			System.out.println("fail");
+		}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
 		}
 	}
 

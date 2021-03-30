@@ -60,7 +60,7 @@ public class SignUp extends HttpServlet {
 			out.println("<script type=\"text/JavaScript\">");
             out.println("alert(\"User Registered Successfully!\")");
             out.println("</script>");	
-            wait(1000);
+            //wait(1000);
     		
 		}
 		else
