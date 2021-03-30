@@ -40,4 +40,14 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginBean</display-name>
+    <servlet-name>LoginBean</servlet-name>
+    <servlet-class>Bean.LoginBean</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginBean</servlet-name>
+    <url-pattern>/LoginBean</url-pattern>
+  </servlet-mapping>
 </web-app>
