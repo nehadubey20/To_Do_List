@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -46,6 +48,7 @@ public class Login extends HttpServlet {
 		lb.setUsername(username);
 		lb.setPassword(password);
 		
+		PrintWriter out = response.getWriter();		
 		try {
 		if(LoginDAO.validate(lb))
 		{
@@ -55,11 +58,19 @@ public class Login extends HttpServlet {
 		else
 		{
 			System.out.println("fail");
+			out.println("<script type=\"text/JavaScript\">");
+            out.println("alert(\"Enter a valid username or password!\")");
+            out.println("</script>");	
+//    		response.sendRedirect("login.jsp");
+
+            
 		}
+
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
+			
 		}
 	}
 
