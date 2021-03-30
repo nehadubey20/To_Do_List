@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Bean.LoginBean;
+import DAO.LoginDAO;
+
 /**
  * Servlet implementation class Login
  */
@@ -25,7 +28,8 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.sendRedirect("login.jsp");
+	
 	}
 
 	/**
@@ -35,6 +39,22 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		LoginBean lb =new LoginBean();
+		lb.setUsername(username);
+		lb.setPassword(password);
+		
+		
+		if(LoginDAO.validate(lb))
+		{
+			request.getRequestDispatcher("ToDoList.jsp").forward(request,response);
+		}
+		else
+		{
+			System.out.println("fail");
+		}
 	}
 
 }
