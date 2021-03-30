@@ -54,24 +54,31 @@ public class SignUp extends HttpServlet {
 		ub.setPhone(phone);
 		
 		PrintWriter out=response.getWriter();
+		try {
 		if(SignUpDAO.insertData(ub)==true)
 		{
 			out.println("<script type=\"text/JavaScript\">");
             out.println("alert(\"User Registered Successfully!\")");
-            out.println("</script>");
-			
-			
+            out.println("</script>");	
+            wait(1000);
+    		
 		}
 		else
 		{
 			out.println("<script type=\"text/JavaScript\">");
             out.println("alert(\"Registeration Fail!\")");
             out.println("</script>");
+            
+		
+		}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
 		}
 		
-		//request.getRequestDispatcher("login.jsp").forward(request, response);
-		
-		
+        request.getRequestDispatcher("login.jsp").forward(request, response);
+
 	}
 
 }
