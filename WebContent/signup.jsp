@@ -15,6 +15,7 @@
 					<img src="SignUpAsset/images/Registration.jpg" alt="">
 				</div>
 				<form action="SignUp" method="post">
+				
 					<h3>Registration Form</h3>
 					<div class="form-group">
 						<input type="text" placeholder="First Name" class="form-control" name="fname">
@@ -24,7 +25,6 @@
 						<input type="text" placeholder="Username" class="form-control" name="username">
 						<i class="zmdi zmdi-account"></i>
 					</div>
-					
 					<div class="form-wrapper">
 						<input type="password" placeholder="Password" class="form-control" name="password">
 						<i class="zmdi zmdi-lock"></i>
