@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="SignUpAsset/css/style.css">
 </head>
 	<body>
-
 		<div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
 			<div class="inner">
 				<div class="image-holder">
@@ -38,8 +37,6 @@
 						<input type="text" placeholder="Phone Number" class="form-control" name="phone">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
-					
-					
 					<button>Register
 						<i class="zmdi zmdi-arrow-right"></i>
 					</button>
