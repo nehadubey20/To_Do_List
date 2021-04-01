@@ -29,8 +29,9 @@ public class SignUp extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		response.sendRedirect("signup.jsp");
+
 	}
 
 	/**
@@ -38,8 +39,10 @@ public class SignUp extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
-		
+		register(request,response);		
+	}
+	
+		private void register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		String fname = request.getParameter("fname");
 		String lname = request.getParameter("lname");
 		String username = request.getParameter("username");
@@ -55,30 +58,19 @@ public class SignUp extends HttpServlet {
 		
 		PrintWriter out=response.getWriter();
 		try {
-		if(SignUpDAO.insertData(ub)==true)
-		{
-			out.println("<script type=\"text/JavaScript\">");
-            out.println("alert(\"User Registered Successfully!\")");
-            out.println("</script>");	
-            //wait(1000);
-    		
-		}
-		else
-		{
-			out.println("<script type=\"text/JavaScript\">");
-            out.println("alert(\"Registeration Fail!\")");
-            out.println("</script>");
-            
 		
-		}
+			if(SignUpDAO.insertData(ub)==true)
+			{
+				request.setAttribute("NOTIFICATION", "User Registered Successfully!");
+			}
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 		
-        request.getRequestDispatcher("login.jsp").forward(request, response);
+      request.getRequestDispatcher("login.jsp").forward(request, response);
 
 	}
-
 }
+

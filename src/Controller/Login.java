@@ -60,10 +60,7 @@ public class Login extends HttpServlet {
 			System.out.println("fail");
 			out.println("<script type=\"text/JavaScript\">");
             out.println("alert(\"Enter a valid username or password!\")");
-            out.println("</script>");	
-//    		response.sendRedirect("login.jsp");
-
-            
+            out.println("</script>");    		   
 		}
 
 		}
@@ -72,6 +69,7 @@ public class Login extends HttpServlet {
 			e.printStackTrace();
 			
 		}
+		//response.sendRedirect("login.jsp");
 	}
 
 }
