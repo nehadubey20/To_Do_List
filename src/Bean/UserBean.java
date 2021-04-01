@@ -1,6 +1,8 @@
 package Bean;
 
-public class UserBean {
+import java.io.Serializable;
+
+public class UserBean implements Serializable {
 
 	private int userId;
 	private String fname;
