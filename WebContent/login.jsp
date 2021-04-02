@@ -39,6 +39,7 @@
         <div class="col-sm-6 px-0 d-none d-sm-block">
            <img src="assets/images/img1.jpg" alt="login image" class="login-img"> 
         </div>
+        
       </div>
     </div>
   </main>
