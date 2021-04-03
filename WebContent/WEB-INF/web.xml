@@ -8,18 +8,9 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-    <welcome-file>ToDoList.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>aa</display-name>
-    <servlet-name>aa</servlet-name>
-    <servlet-class>DAO.aa</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>aa</servlet-name>
-    <url-pattern>/aa</url-pattern>
-  </servlet-mapping>
+ 
   <servlet>
     <description></description>
     <display-name>SignUp</display-name>

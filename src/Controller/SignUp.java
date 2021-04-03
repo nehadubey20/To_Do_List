@@ -3,6 +3,7 @@ package Controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +41,7 @@ public class SignUp extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		register(request,response);		
+
 	}
 	
 		private void register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -58,8 +60,8 @@ public class SignUp extends HttpServlet {
 		
 		PrintWriter out=response.getWriter();
 		try {
-		
-			if(SignUpDAO.insertData(ub)==true)
+			boolean result = SignUpDAO.insertData(ub);
+			if(result==true)
 			{
 				request.setAttribute("NOTIFICATION", "User Registered Successfully!");
 			}
@@ -69,8 +71,9 @@ public class SignUp extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-      request.getRequestDispatcher("login.jsp").forward(request, response);
-
-	}
+		RequestDispatcher dispatcher = request.getRequestDispatcher("signup.jsp");
+        dispatcher.forward(request, response);
+		
+     }
 }
 
