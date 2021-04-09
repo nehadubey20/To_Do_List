@@ -10,7 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
- 
   <servlet>
     <description></description>
     <display-name>SignUp</display-name>
@@ -40,5 +39,25 @@
   <servlet-mapping>
     <servlet-name>LoginBean</servlet-name>
     <url-pattern>/LoginBean</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Todo</display-name>
+    <servlet-name>Todo</servlet-name>
+    <servlet-class>Bean.Todo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Todo</servlet-name>
+    <url-pattern>/Todo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TodoImpl</display-name>
+    <servlet-name>TodoImpl</servlet-name>
+    <servlet-class>Bean.TodoImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoImpl</servlet-name>
+    <url-pattern>/TodoImpl</url-pattern>
   </servlet-mapping>
 </web-app>
