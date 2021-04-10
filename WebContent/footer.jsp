@@ -1,4 +1,6 @@
-<style type="text/css" media="screen">@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 * {
   font-family: Roboto;
@@ -104,10 +106,10 @@ section {
 		<footer class="footer-distributed">
 			<div class="footer-right">
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i>f</a>
+				<a href="#"><i class="fa fa-twitter"></i>t</a>
+				<a href="#"><i class="fa fa-linkedin"></i>L</a>
+				<a href="#"><i class="fa fa-github"></i>G</a>
 			</div>
 
 			<div class="footer-left">
