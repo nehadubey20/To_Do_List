@@ -18,7 +18,7 @@ integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQV
   opacity:0.5
 }
 .site-footer hr.small
-{
+{--
   margin:20px 0
 }
 .site-footer h6
