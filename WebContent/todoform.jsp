@@ -49,7 +49,6 @@
  <div class="container col-md-5">
   <div class="card">
    <div class="card-body">
-   <form action="update" method="post">    
    <%--  <c:if test="${todo != null}">
      </c:if>
     <c:if test="${todo == null}">
