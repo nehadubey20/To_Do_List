@@ -12,6 +12,15 @@
  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
  crossorigin="anonymous">
  
+<style>
+	.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 0 1 auto;
+    padding: 9.25rem;
+    }
+</style>
+
+
 </head>
 <body>
  <header>
@@ -35,10 +44,8 @@
  
  -->
  
- <header>
   <jsp:include page="header.jsp"></jsp:include>
  
- </header>
  <div class="container col-md-5">
   <div class="card">
    <div class="card-body">
