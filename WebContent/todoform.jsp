@@ -74,7 +74,7 @@
 
     <fieldset class="form-group">
      <label>Todo Title</label> <input type="text"
-      value="<c:out value='${todo.title}' />" class="form-control"
+      value="" class="form-control"
       name="title" required="required" minlength="5">
     </fieldset>
 
