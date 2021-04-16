@@ -49,29 +49,6 @@
  <div class="container col-md-5">
   <div class="card">
    <div class="card-body">
-   <%--  <c:if test="${todo != null}">
-     </c:if>
-    <c:if test="${todo == null}">
-     <form action="insert" method="post">
-    </c:if>
-
-    <caption>
-     <h2>
-      <c:if test="${todo != null}">
-               Edit Todo
-              </c:if>
-      <c:if test="${todo == null}">
-               Add New Todo
-              </c:if>
-      
- </h2>
-    </caption>
-
-    <c:if test="${todo != null}">
-     <input type="hidden" name="id" value="<c:out value='${todo.id}' />" />
-    </c:if>
---%>
-
     <fieldset class="form-group">
      <label>Todo Title</label> <input type="text"
       value="" class="form-control"
