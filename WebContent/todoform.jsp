@@ -24,12 +24,6 @@
 </head>
 <body>
  <header>
-<!--   <nav class="navbar navbar-expand-md navbar-dark"
-   style="background-color: tomato">
-   <div>
-    <a href="https://www.javaguides.net" class="navbar-brand"> Todo
-     App</a>
-   </div>
 
    <ul class="navbar-nav">
     <li><a href="<%-- <%=request.getContextPath()%> --%>/list"
@@ -74,7 +68,6 @@
       value="<c:out value='${todo.targetDate}' />" class="form-control"
       name="targetDate" required="required">
     </fieldset>
-
     <button type="submit" class="btn btn-success">Save</button>
     </form>
    </div>
