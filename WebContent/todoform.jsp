@@ -35,9 +35,7 @@
      class="nav-link">Logout</a></li>
    </ul>
  </header>
- 
-
- 
+  
   <jsp:include page="header.jsp"></jsp:include>
  
  <div class="container col-md-5">
