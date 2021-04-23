@@ -22,8 +22,8 @@
    </div>
 
    <ul class="navbar-nav">
-    <li><a href="#"%>/list"
-     class="nav-link">Todos</a></li>
+    <li><a href="#">
+     <div class="nav-link">Todos</a></li>
    </ul>
 
    <ul class="navbar-nav navbar-collapse justify-content-end">
@@ -32,10 +32,10 @@
    </ul>
   </nav>
  </header>
+ </div>
 
  <div class="row">
-  <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
-
+  
   <div class="container">
    <h3 class="text-center">List of Todos</h3>
    <hr>
